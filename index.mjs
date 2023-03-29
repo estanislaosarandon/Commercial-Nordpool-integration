@@ -29,3 +29,15 @@ const run = async () => {
   }
 }
 run()
+
+// IoTNode
+// {
+//   "name": "estani_test",
+//   "description": "test node",
+//   "nodeType": "string",
+//   "rabbitRouting": {
+//       "value": "publisher"
+//   },
+//   "_id": "642442e2b231e8e97722605a",
+//   "synchronizedAt": "2023-03-29T13:53:38.257Z"
+// }
