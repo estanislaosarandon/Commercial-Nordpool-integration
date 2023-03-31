@@ -1,0 +1,24 @@
+{
+  "name": "nordpool",
+  "version": "1.0.0",
+  "description": "Unofficial Nordpool Elspot API npm client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.npmjs.com/package/nordpool"
+  },
+  "keywords": [
+    "nordpool",
+    "API",
+    "energy",
+    "prices",
+    "volume",
+    "capacity",
+    "flow"
+  ],
+  "author": "Samuel Rinnetmäki",
+  "license": "MIT"
+}

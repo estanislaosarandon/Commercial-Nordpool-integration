@@ -6,6 +6,7 @@ import dayjsPluginTimezone from 'dayjs/plugin/timezone.js';
 dayjs.extend(dayjsPluginUtc); // Used by timezone
 dayjs.extend(dayjsPluginTimezone); // Used to convert from one timezone to another
 
+const secret = 'NRJR3ALTIME';
 const username = 'estani';
 const password = 'test';
 const nodeId = '642442e2b231e8e97722605a';
@@ -41,6 +42,7 @@ const run = async () => {
 
 const getToken = async () => {
   try {
+    // const response = await fetch('https://staging.yggio.net/http-push/generic?identifier=secret', {
     const response = await fetch('https://staging.yggio.net/api/auth/local', {
       method: 'POST',
       headers: {
