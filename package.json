@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://www.npmjs.com/package/nordpool"
-  },
+  "repository": "https://www.npmjs.com/package/nordpool",
   "keywords": [
     "nordpool",
     "API",
