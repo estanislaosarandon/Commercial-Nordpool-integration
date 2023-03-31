@@ -85,18 +85,16 @@ const publish = async (value, token) => {
       throw new Error('Network response was not ok');
     }
     const data = await response.json();
-    console.log(data);
+    console.log(data, new Date());
   } catch (error) {
     console.error('There was a problem with the API request:', error);
   }
 };    
 
 const runAtNextHour = () => {
-  const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), + 1, 1, 0);
-  //const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds + 5, 0);
-  console.log('Next hour:', nextHour);
-  const delay = nextHour - now;
-  console.log('Delay:', delay);
+  const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), + 1, 1, 0); // run every hour
+  //const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds + 5, 0); // run every 5 seconds  
+  const delay = nextHour - now;  
   setTimeout(() => {
     run();
     setInterval(run, 60 * 60 * 1000);
